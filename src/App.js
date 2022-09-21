@@ -24,8 +24,8 @@ import { Footer, Tooltip } from "flowbite-react";
 function App() {
   return (
     <div className="h-screen w-screen bg-cyan-900 flex flex-col items-center ">
-      <div className="flex flex-col lg:flex-row h-full justify-center">
-        <div className="flex flex-col items-center lg:w-2/5  opacity-100 mt-1 mr-1 bg-gray-800 rounded-lg shadow-md">
+      <div className="flex flex-col lg:flex-row h-full items-center">
+        <div className="flex flex-col items-center w-11/12 lg:w-2/5  opacity-100 mt-1 mr-1 bg-gray-800 rounded-lg shadow-md">
           <div className="flex flex-row items-center justify-between">
             <div className=" w-36 h-36 mt-5 rounded-full border-lg border-yellow-500">
               <img
@@ -84,7 +84,7 @@ function App() {
             </a>
           </div>
         </div>
-        <div className="flex flex-col items-center lg:w-2/5  opacity-100 mt-1 mr-1  bg-gray-800 rounded-lg shadow-md">
+        <div className="flex flex-col items-center w-11/12 lg:w-2/5  opacity-100 mt-1 mr-1  bg-gray-800 rounded-lg shadow-md">
           <div className="flex flex-col justify-between items-center">
             <h1 className="font-bold text-white pl-5 lg:pl-0 text-2xl m-1">
               Technologies used on my projects:
@@ -148,9 +148,10 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col  w-4/5 h-3/4 mt-2 justify-center items-center mr-1 bg-gray-800 rounded lg">
-        <h1 className="text-3xl text-white font-semibold">
-          Projects under development
+      <div className="flex flex-col  w-11/12 lg:w-4/5 h-3/4 mt-2 justify-center items-center mr-1 bg-gray-800 rounded lg">
+        <h1 className="text-2xl lg:text-3xl text-white font-semibold">
+         
+         Projects under development
         </h1>
         <div className="flex flex-col lg:flex-row m-2">
           <div className=" items-center justify-center w-56">
