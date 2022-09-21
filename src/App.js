@@ -24,8 +24,8 @@ import { Footer, Tooltip } from "flowbite-react";
 function App() {
   return (
     <div className="h-screen w-screen bg-cyan-900 flex flex-col items-center ">
-      <div className="flex flex-col lg:flex-row h-full items-center">
-        <div className="flex flex-col items-center w-11/12 lg:w-2/5  opacity-100 mt-1 mr-1 bg-gray-800 rounded-lg shadow-md">
+      <div className="flex flex-col lg:flex-row h-full items-center lg:justify-center">
+        <div className="flex flex-col items-center lg:h-74 w-11/12 lg:w-2/5  opacity-100 mt-1 mr-1 bg-gray-800 rounded-lg shadow-md">
           <div className="flex flex-row items-center justify-between">
             <div className=" w-36 h-36 mt-5 rounded-full border-lg border-yellow-500">
               <img
@@ -84,16 +84,16 @@ function App() {
             </a>
           </div>
         </div>
-        <div className="flex flex-col items-center w-11/12 lg:w-2/5  opacity-100 mt-1 mr-1  bg-gray-800 rounded-lg shadow-md">
-          <div className="flex flex-col justify-between items-center">
+        <div className="flex flex-col items-center w-11/12 lg:w-2/5 lg:h-74  opacity-100 mt-1 mr-1  bg-gray-800 rounded-lg shadow-md">
+          <div className="flex flex-col items-center">
             <h1 className="font-bold text-white pl-5 lg:pl-0 text-2xl m-1">
               Technologies used on my projects:
             </h1>
           </div>
           <div>
-            <div className="flex flex-col justify-between items-center m-2">
+            <div className="flex flex-col justify-between items-center">
               <h1 className="text-white">Languages & Runtime Environments:</h1>
-              <div className="flex m-2">
+              <div className="flex m-1">
                 <Tooltip content="JavaScript" placement="bottom">
                   <img src={jss} className="h-10 w-10 m-1" />
                 </Tooltip>
@@ -106,9 +106,9 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col justify-between items-center m-2">
+          <div className="flex flex-col justify-between items-center m-1">
             <h1 className="text-white">Back-End:</h1>
-            <div className="flex m-2">
+            <div className="flex m-1">
               <Tooltip content="Express" placement="bottom">
                 <img src={express} className="h-10 w-10 m-1" />
               </Tooltip>
@@ -128,9 +128,9 @@ function App() {
               </Tooltip>
             </div>
           </div>
-          <div className="flex flex-col justify-between items-center m-2">
+          <div className="flex flex-col justify-between items-center m-1">
             <h1 className="text-white">Front-End:</h1>
-            <div className="flex m-2">
+            <div className="flex m-1">
               <Tooltip content="Redux" placement="bottom">
                 <img src={reduxx} className="h-10 w-10 m-1" />
               </Tooltip>
@@ -149,9 +149,8 @@ function App() {
         </div>
       </div>
       <div className="flex flex-col  w-11/12 lg:w-4/5 h-3/4 mt-2 justify-center items-center mr-1 bg-gray-800 rounded lg">
-        <h1 className="text-2xl lg:text-3xl text-white font-semibold">
-         
-         Projects under development
+        <h1 className="text-2xl lg:text-3xl text-white m-3 font-semibold">
+          Projects under development
         </h1>
         <div className="flex flex-col lg:flex-row m-2">
           <div className=" items-center justify-center w-56">
@@ -178,7 +177,6 @@ function App() {
           </div> */}
         </div>
       </div>
-  
     </div>
   );
 }
