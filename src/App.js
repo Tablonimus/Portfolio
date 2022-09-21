@@ -5,7 +5,6 @@ import linkedin from "./linkedin.png";
 import github from "./github.png";
 import pdf from "./pdf.png";
 import cv from "./CV.pdf";
-
 import css from "./icons/css.png";
 import html from "./icons/html.png";
 import jss from "./icons/jss.png";
@@ -18,13 +17,14 @@ import node from "./icons/node.png";
 import express from "./icons/express.png";
 import seq from "./icons/sequelize.png";
 import mongoose from "./icons/mongoose.png";
+import capturahappy from "./capturahappy.png";
 
-import { Tooltip } from "flowbite-react";
+import { Footer, Tooltip } from "flowbite-react";
 
 function App() {
   return (
-    <div className="h-screen w-screen bg-cyan-900 flex flex-col justify-center items-center ">
-      <div className="flex flex-col lg:flex-row w-screen h-full justify-center">
+    <div className="h-screen w-screen bg-cyan-900 flex flex-col items-center ">
+      <div className="flex flex-col lg:flex-row h-full justify-center">
         <div className="flex flex-col items-center lg:w-2/5  opacity-100 mt-1 mr-1 bg-gray-800 rounded-lg shadow-md">
           <div className="flex flex-row items-center justify-between">
             <div className=" w-36 h-36 mt-5 rounded-full border-lg border-yellow-500">
@@ -57,7 +57,7 @@ function App() {
               <div className="flex items-center m-1 hover:bg-gray-200 rounded-lg">
                 <img src={linkedin} alt="" className="rounded-full w-6 h-6" />
                 <h5 class=" font-semibold text-sm lg:text-md ml-2 tracking-tight text-white  hover:text-black">
-                  LinkedIn profile{" "}
+                  LinkedIn profile
                 </h5>
               </div>
             </a>
@@ -95,13 +95,13 @@ function App() {
               <h1 className="text-white">Languages & Runtime Environments:</h1>
               <div className="flex m-2">
                 <Tooltip content="JavaScript" placement="bottom">
-                  <img src={jss} className="h-8 w-8 m-1" />
+                  <img src={jss} className="h-10 w-10 m-1" />
                 </Tooltip>
                 <Tooltip content="HTML 5" placement="bottom">
-                  <img src={html} className="h-8 w-8 m-1" />
+                  <img src={html} className="h-10 w-10 m-1" />
                 </Tooltip>
                 <Tooltip content="Node.js" placement="bottom">
-                  <img src={node} className="h-8 w-8 m-1" />
+                  <img src={node} className="h-10 w-10 m-1" />
                 </Tooltip>
               </div>
             </div>
@@ -110,21 +110,21 @@ function App() {
             <h1 className="text-white">Back-End:</h1>
             <div className="flex m-2">
               <Tooltip content="Express" placement="bottom">
-                <img src={express} className="h-8 w-8 m-1" />
+                <img src={express} className="h-10 w-10 m-1" />
               </Tooltip>
 
               <Tooltip content="PostgreSQL" placement="bottom">
-                <img src={postgress} className="h-8 w-8 m-1" />
+                <img src={postgress} className="h-10 w-10 m-1" />
               </Tooltip>
               <Tooltip content="Sequelize" placement="bottom">
-                <img src={seq} className="h-8 w-8 m-1" />
+                <img src={seq} className="h-10 w-10 m-1" />
               </Tooltip>
 
               <Tooltip content="MongoDB" placement="bottom">
-                <img src={mongo} className="h-8 w-8 m-1" />
+                <img src={mongo} className="h-10 w-10 m-1" />
               </Tooltip>
               <Tooltip content="Mongoose" placement="bottom">
-                <img src={mongoose} className="h-8 w-8 m-1" />
+                <img src={mongoose} className="h-10 w-10 m-1" />
               </Tooltip>
             </div>
           </div>
@@ -132,66 +132,52 @@ function App() {
             <h1 className="text-white">Front-End:</h1>
             <div className="flex m-2">
               <Tooltip content="Redux" placement="bottom">
-                <img src={reduxx} className="h-8 w-8 m-1" />
+                <img src={reduxx} className="h-10 w-10 m-1" />
               </Tooltip>
               <Tooltip content="React.js" placement="bottom">
-                <img src={react} className="h-8 w-8 m-1" />
+                <img src={react} className="h-10 w-10 m-1" />
               </Tooltip>
 
               <Tooltip content="CSS 3" placement="bottom">
-                <img src={css} className="h-8 w-8 m-1" />
+                <img src={css} className="h-10 w-10 m-1" />
               </Tooltip>
               <Tooltip content="Tailwind Css" placement="bottom">
-                <img src={tailwind} className="h-8 w-8 m-1" />
+                <img src={tailwind} className="h-10 w-10 m-1" />
               </Tooltip>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex flex-col  w-4/5 h-1/2 mt-2 justify-center items-center mr-1 bg-gray-800 rounded lg">
+      <div className="flex flex-col  w-4/5 h-3/4 mt-2 justify-center items-center mr-1 bg-gray-800 rounded lg">
         <h1 className="text-3xl text-white font-semibold">
           Projects under development
         </h1>
         <div className="flex flex-col lg:flex-row m-2">
-          <div>
-            <h1>
-              Happy Tails
-              </h1> 
-              <h1>
-         CAPTURA DE PANTALLA?
-              </h1> 
-              <h1>
-         BREVE DESCRIP´TION
-              </h1> 
-
+          <div className=" items-center justify-center w-56">
+            <a href="https://happytails.vercel.app">
+              <h1 className="text-white font-bold text-xl">Happy Tails</h1>
+              <Tooltip content="Go to website">
+                <img src={capturahappy} className="h-36 w-56 rounded-lg" />
+                <h1 className="text-white font-semibold">
+                  This social network has been made for pets without a place,
+                  you can find your next pet here or buy something for yours!{" "}
+                </h1>
+              </Tooltip>
+            </a>
+          </div>
+          {/* <div>
+            <h1>World Wide Weather App</h1>
+            <h1>CAPTURA DE PANTALLA?</h1>
+            <h1>BREVE DESCRIP´TION</h1>
           </div>
           <div>
-            <h1>
-            World Wide Weather App
-              </h1> 
-              <h1>
-         CAPTURA DE PANTALLA?
-              </h1> 
-              <h1>
-         BREVE DESCRIP´TION
-              </h1> 
-
-          </div>
-          <div>
-            <h1>
-             Counrties Atlas
-              </h1> 
-              <h1>
-         CAPTURA DE PANTALLA?
-              </h1> 
-              <h1>
-         BREVE DESCRIP´TION
-              </h1> 
-
-          </div>
-       
+            <h1>Counrties Atlas</h1>
+            <h1>CAPTURA DE PANTALLA?</h1>
+            <h1>BREVE DESCRIP´TION</h1>
+          </div> */}
         </div>
       </div>
+  
     </div>
   );
 }
