@@ -18,6 +18,7 @@ import express from "./icons/express.png";
 import seq from "./icons/sequelize.png";
 import mongoose from "./icons/mongoose.png";
 import capturahappy from "./capturahappy.png";
+import wwweather from "./wwweather.png";
 
 import { Footer, Tooltip } from "flowbite-react";
 
@@ -149,13 +150,15 @@ function App() {
         </div>
       </div>
       <div className="flex flex-col  w-11/12 lg:w-4/5 h-3/4 mt-2 justify-center items-center mr-1 bg-gray-800 rounded lg">
-        <h1 className="text-2xl lg:text-3xl text-white m-3 font-semibold">
+        <h1 className="text-2xl lg:text-3xl text-white mt-3 font-semibold">
           Projects under development
         </h1>
-        <div className="flex flex-col lg:flex-row m-2">
-          <div className=" items-center justify-center w-56">
+        <div className="flex flex-col justify-between lg:flex-row m-2">
+          <div className=" items-center justify-center w-56 m-2">
             <a href="https://happytails.vercel.app">
-              <h1 className="text-white font-bold text-xl">Happy Tails</h1>
+              <h1 className="text-white font-bold text-xl mb-1">
+                Happy Tails (Responsive App){" "}
+              </h1>
               <Tooltip content="Go to website">
                 <img src={capturahappy} className="h-36 w-56 rounded-lg" />
                 <h1 className="text-white font-semibold">
@@ -165,12 +168,20 @@ function App() {
               </Tooltip>
             </a>
           </div>
-          {/* <div>
-            <h1>World Wide Weather App</h1>
-            <h1>CAPTURA DE PANTALLA?</h1>
-            <h1>BREVE DESCRIP´TION</h1>
+          <div className=" items-center justify-center w-56 m-2">
+            <a href="https://worldwideweather.vercel.app/">
+              <h1 className="text-white font-bold text-xl  mb-1">
+                Weather App (Responsive App){" "}
+              </h1>
+              <Tooltip content="Go to website">
+                <img src={wwweather} className="h-36 w-56 rounded-lg" />
+                <h1 className="text-white font-semibold">
+                  My first react App! Made with React-Redux, CSS3 & HTML5
+                </h1>
+              </Tooltip>
+            </a>
           </div>
-          <div>
+          {/*  <div>
             <h1>Counrties Atlas</h1>
             <h1>CAPTURA DE PANTALLA?</h1>
             <h1>BREVE DESCRIP´TION</h1>
