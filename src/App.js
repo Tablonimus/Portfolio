@@ -149,7 +149,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col  w-11/12 lg:w-4/5 h-3/4 mt-2 justify-center items-center mr-1 bg-gray-800 rounded lg">
+      <div className="flex flex-col  w-11/12 lg:w-4/5 mt-2 justify-center items-center mr-1 bg-gray-800 rounded lg">
         <h1 className="text-2xl lg:text-3xl text-white mt-3 font-semibold">
           Projects under development
         </h1>
