@@ -19,6 +19,7 @@ import seq from "./icons/sequelize.png";
 import mongoose from "./icons/mongoose.png";
 import capturahappy from "./capturahappy.png";
 import wwweather from "./wwweather.png";
+import bounty from "./bounty.png";
 
 import { Footer, Tooltip } from "flowbite-react";
 
@@ -155,30 +156,80 @@ function App() {
         </h1>
         <div className="flex flex-col justify-between lg:flex-row m-2">
           <div className=" items-center justify-center w-56 m-2">
-            <a href="https://happytails.vercel.app">
+            <a
+              href="https://bountyhunter2.vercel.app/"
+              className="flex  flex-col items-center"
+            >
               <h1 className="text-white font-bold text-xl mb-1">
-                Happy Tails (Responsive App){" "}
+                Bounty Hunter
               </h1>
+              <Tooltip content="Go to website">
+                <img src={bounty} className="h-36 w-56 rounded-lg" />
+                <h1 className="text-white font-semibold">
+                  You must hunt the worst criminals, are you ready?. Game made
+                  with FBI API (Responsive Design, Game, API rest){" "}
+                </h1>
+              </Tooltip>
+            </a>
+            <a
+              target="_blank"
+              href="https://github.com/Tablonimus/BountyHunter"
+            >
+              <div className="flex items-center m-1 hover:bg-gray-200 rounded-lg">
+                <img src={github} alt="" className="rounded-full w-6 h-6" />
+                <h5 class=" font-semibold text-sm lg:text-md ml-2 tracking-tight text-white hover:text-black">
+                  GitHub Repository
+                </h5>
+              </div>
+            </a>
+          </div>
+          <div className=" items-center justify-center w-56 m-2">
+            <a
+              href="https://happytails.vercel.app"
+              className="flex  flex-col items-center"
+            >
+              <h1 className="text-white font-bold text-xl mb-1">Happy Tails</h1>
               <Tooltip content="Go to website">
                 <img src={capturahappy} className="h-36 w-56 rounded-lg" />
                 <h1 className="text-white font-semibold">
                   This social network has been made for pets without a place,
                   you can find your next pet here or buy something for yours!{" "}
+                  (Responsive Design){" "}
                 </h1>
               </Tooltip>
             </a>
+            <a target="_blank" href="https://github.com/Tablonimus/Happy-Tails">
+              <div className="flex items-center m-1 hover:bg-gray-200 rounded-lg">
+                <img src={github} alt="" className="rounded-full w-6 h-6" />
+                <h5 class=" font-semibold text-sm lg:text-md ml-2 tracking-tight text-white hover:text-black">
+                  GitHub Repository
+                </h5>
+              </div>
+            </a>
           </div>
           <div className=" items-center justify-center w-56 m-2">
-            <a href="https://worldwideweather.vercel.app/">
+            <a
+              href="https://worldwideweather.vercel.app/"
+              className="flex  flex-col items-center"
+            >
               <h1 className="text-white font-bold text-xl  mb-1">
-                Weather App (Responsive App){" "}
+                Weather App
               </h1>
               <Tooltip content="Go to website">
                 <img src={wwweather} className="h-36 w-56 rounded-lg" />
                 <h1 className="text-white font-semibold">
                   My first react App! Made with React-Redux, CSS3 & HTML5
+                  (Responsive Design, Api rest){" "}
                 </h1>
               </Tooltip>
+            </a>
+            <a target="_blank" href="https://github.com/Tablonimus/Weather-App">
+              <div className="flex items-center m-1 hover:bg-gray-200 rounded-lg">
+                <img src={github} alt="" className="rounded-full w-6 h-6" />
+                <h5 class=" font-semibold text-sm lg:text-md ml-2 tracking-tight text-white hover:text-black">
+                  GitHub Repository
+                </h5>
+              </div>
             </a>
           </div>
           {/*  <div>
