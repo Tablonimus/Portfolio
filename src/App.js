@@ -20,6 +20,7 @@ import mongoose from "./icons/mongoose.png";
 import capturahappy from "./capturahappy.png";
 import wwweather from "./wwweather.png";
 import bounty from "./bounty.png";
+import acon from "./acon.png";
 
 import { Footer, Tooltip } from "flowbite-react";
 
@@ -155,6 +156,35 @@ function App() {
           Projects under development
         </h1>
         <div className="flex flex-col justify-between lg:flex-row m-2">
+          <div className=" items-center justify-center w-56 m-2">
+            <a
+              href="https://aconcaguacup22.vercel.app/"
+              className="flex  flex-col items-center"
+            >
+              <h1 className="text-white font-bold text-xl mb-1">
+                Aconcagua Cup (PWA)
+              </h1>
+              <Tooltip content="Go to website">
+                <img src={acon} className="h-36 w-56 rounded-lg" />
+                <h1 className="text-white font-semibold">
+                  News and notifications section for international friendly
+                  tournament of youth soccer categories (PWA,Responsive Design,
+                  Web Push Notifications, Firebase){" "}
+                </h1>
+              </Tooltip>
+            </a>
+            <a
+              target="_blank"
+              href="https://github.com/Tablonimus/AconcaguaCup2022PWA"
+            >
+              <div className="flex items-center m-1 hover:bg-gray-200 rounded-lg">
+                <img src={github} alt="" className="rounded-full w-6 h-6" />
+                <h5 class=" font-semibold text-sm lg:text-md ml-2 tracking-tight text-white hover:text-black">
+                  GitHub Repository
+                </h5>
+              </div>
+            </a>
+          </div>
           <div className=" items-center justify-center w-56 m-2">
             <a
               href="https://bountyhunter2.vercel.app/"
