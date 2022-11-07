@@ -158,7 +158,7 @@ function App() {
         <div className="flex flex-col justify-between lg:flex-row m-2">
           <div className=" items-center justify-center w-56 m-2">
             <a
-              href="https://aconcaguacup22.vercel.app/"
+              href="https://aconcaguacup22.com.ar/"
               className="flex  flex-col items-center"
             >
               <h1 className="text-white font-bold text-xl mb-1">
